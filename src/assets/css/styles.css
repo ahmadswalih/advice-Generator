@@ -187,7 +187,7 @@ a {
 /* For small devices */
 @media screen and (max-width: 600px) {
     body{
-        padding-top: 125px;
+        padding-top: 100px;
     }
     .neon__container {
         grid-template-columns: 1fr;

@@ -1,14 +1,14 @@
 import React from "react";
 import "../assets/css/styles.css";
 
-const ComponentCard = ({ quote }) => {
+const ComponentCard = ({ quote, onSubmit }) => {
   return (
     <div>
-      <section class="neon bd-container">
-        <div class="neon__container">
-          <div class="neon__card">
+      <section className="neon bd-container">
+        <div className="neon__container">
+          <div className="neon__card">
             <svg
-              class="neon__icon"
+              className="neon__icon"
               viewBox="0 0 48 48"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -30,13 +30,17 @@ const ComponentCard = ({ quote }) => {
                             20.5221L26.786 20.0504L25.328 17.1254C25.078 16.622 24.57 16.3089 24.004 16.3069Z"
               />
             </svg>
-            <h1 class="neon__title">Quote's Generator</h1>
+            <h1 className="neon__title">Quote's Generator</h1>
             <br />
-            <p class="neon__description">{quote.advice}</p>
-            <p class="neon__button">
-              Buy Now
+            <p className="neon__description">{quote.advice}</p>
+            <p
+              style={{ cursor: "pointer" }}
+              onClick={onSubmit}
+              className="neon__button"
+            >
+              Generate New one
               <svg
-                class="neon__button-icon"
+                className="neon__button-icon"
                 viewBox="0 0 48 48"
                 xmlns="http://www.w3.org/2000/svg"
               >

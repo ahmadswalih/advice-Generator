@@ -1,6 +1,4 @@
 import axios from "axios";
-
-import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from "react";
 import ComponentCard from "./components/ComponentCard";
 import "./App.css";
@@ -11,7 +9,9 @@ const App = () => {
     const { data } = await axios.get("https://api.adviceslip.com/advice");
     const Response = data.slip;
     setQuote(Response);
-    console.log(quote);
+  };
+  const onSubmit = () => {
+    fetchDetails();
   };
   useEffect(() => {
     fetchDetails();
@@ -20,7 +20,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="new">
-        <ComponentCard quote={quote} />
+        <ComponentCard quote={quote} onSubmit={onSubmit} />
       </div>
     </div>
   );
