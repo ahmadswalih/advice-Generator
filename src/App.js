@@ -19,7 +19,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <ComponentCard quote={quote} />
+      <div className="new">
+        <ComponentCard quote={quote} />
+      </div>
     </div>
   );
 };

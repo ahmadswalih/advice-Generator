@@ -1,13 +1,4 @@
 import React from "react";
-import {
-  Button,
-  Card,
-  CardBody,
-  CardText,
-  CardTitle,
-  Col,
-  Row,
-} from "reactstrap";
 import "../assets/css/styles.css";
 
 const ComponentCard = ({ quote }) => {
@@ -39,9 +30,10 @@ const ComponentCard = ({ quote }) => {
                             20.5221L26.786 20.0504L25.328 17.1254C25.078 16.622 24.57 16.3089 24.004 16.3069Z"
               />
             </svg>
-            <h1 class="neon__title">Quote #{quote.id}</h1>
+            <h1 class="neon__title">Quote's Generator</h1>
+            <br />
             <p class="neon__description">{quote.advice}</p>
-            <a href="#" class="neon__button">
+            <p class="neon__button">
               Buy Now
               <svg
                 class="neon__button-icon"
@@ -63,7 +55,7 @@ const ComponentCard = ({ quote }) => {
                                 13.7031 30.8993 13.5486C30.8993 9.71365 27.7797 6.60477 23.9315 6.60477Z"
                 />
               </svg>
-            </a>
+            </p>
           </div>
         </div>
       </section>
