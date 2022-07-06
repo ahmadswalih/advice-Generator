@@ -6,11 +6,16 @@
   </a>
 </p>
 
-> &#34;Advice Generator&#34; is application where user will get advices. The applicaiton uses api from the website adviceslip. 
+> &#34;Advice Generator&#34; is application where user will get advices in every click. The applicaiton uses api from the website adviceslip.
+
+## Features
+  - Reusable Cards
+  - Get Advices in Every Refresh
+  
+
+## ✨ [Demo](https://celadon-praline-d67394.netlify.app/)
 
 ### 🏠 [Homepage](/src/App.js)
-
-### ✨ [Demo](https://celadon-praline-d67394.netlify.app/)
 
 ## Install
 
