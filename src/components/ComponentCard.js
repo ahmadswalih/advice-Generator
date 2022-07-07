@@ -1,5 +1,4 @@
 import React from "react";
-import { Spinner } from "reactstrap";
 import "../assets/css/styles.css";
 import Loader from "./Loader";
 const ComponentCard = ({ quote, onSubmit, loading }) => {
