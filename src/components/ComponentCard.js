@@ -1,7 +1,8 @@
 import React from "react";
+import { Spinner } from "reactstrap";
 import "../assets/css/styles.css";
-
-const ComponentCard = ({ quote, onSubmit }) => {
+import Loader from "./Loader";
+const ComponentCard = ({ quote, onSubmit, loading }) => {
   return (
     <div>
       <section className="neon bd-container">
@@ -32,7 +33,12 @@ const ComponentCard = ({ quote, onSubmit }) => {
             </svg>
             <h1 className="neon__title">Quote's Generator</h1>
             <br />
-            <p className="neon__description">{quote.advice}</p>
+            {loading ? (
+              <Loader />
+            ) : (
+              <p className="neon__description">{quote.advice}</p>
+            )}
+
             <p
               style={{ cursor: "pointer" }}
               onClick={onSubmit}

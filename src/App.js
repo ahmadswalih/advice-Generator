@@ -4,11 +4,14 @@ import ComponentCard from "./components/ComponentCard";
 import "./App.css";
 const App = () => {
   const [quote, setQuote] = useState({});
+  const [loading, setLoading] = useState(false);
 
   const fetchDetails = async () => {
+    setLoading(true);
     const { data } = await axios.get("https://api.adviceslip.com/advice");
     const Response = data.slip;
     setQuote(Response);
+    setLoading(false);
   };
   const onSubmit = () => {
     fetchDetails();
@@ -20,7 +23,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="new">
-        <ComponentCard quote={quote} onSubmit={onSubmit} />
+        <ComponentCard quote={quote} loading={loading} onSubmit={onSubmit} />
       </div>
     </div>
   );
