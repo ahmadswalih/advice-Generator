@@ -4,14 +4,15 @@ import "./App.css";
 import NewCard from "./components/NewCard";
 const App = () => {
   const [quote, setQuote] = useState({});
-  const [loading, setLoading] = useState(false);
+  const [animate, setAnimate] = useState(false);
+  const [fade, setFade] = useState(false);
 
   const fetchDetails = async () => {
-    setLoading(true);
+    setAnimate(true);
     const { data } = await axios.get("https://api.adviceslip.com/advice");
     const Response = data.slip;
     setQuote(Response);
-    setLoading(false);
+    setFade(true);
   };
   const onSubmit = () => {
     fetchDetails();
@@ -23,7 +24,14 @@ const App = () => {
   return (
     <div className="App">
       <div className="new">
-        <NewCard quote={quote} loading={loading} onSubmit={onSubmit} />
+        <NewCard
+          quote={quote}
+          animate={animate}
+          fade={fade}
+          setAnimate={setAnimate}
+          setFade={setFade}
+          onSubmit={onSubmit}
+        />
       </div>
     </div>
   );

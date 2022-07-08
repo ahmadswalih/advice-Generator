@@ -1,12 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import dividerSmall from "../img/pattern-divider-mobile.svg";
 import dividerBig from "../img/pattern-divider-desktop.svg";
 import dice from "../img/icon-dice.svg";
 
-const NewCard = ({ quote, onSubmit, loading }) => {
-  const [animate, setAnimate] = useState(false);
-  const [fade, setFade] = useState(false);
-
+const NewCard = ({ quote, onSubmit, animate, fade, setFade, setAnimate }) => {
   //custom styles
   const style = {
     card: "bg-dark w-[90%] max-w-[500px] text-center rounded-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4",
