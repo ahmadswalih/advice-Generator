@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import ComponentCard from "./components/ComponentCard";
 import "./App.css";
+import NewCard from "./components/NewCard";
 const App = () => {
   const [quote, setQuote] = useState({});
   const [loading, setLoading] = useState(false);
@@ -23,7 +23,8 @@ const App = () => {
   return (
     <div className="App">
       <div className="new">
-        <ComponentCard quote={quote} loading={loading} onSubmit={onSubmit} />
+        {/* {<ComponentCard quote={quote} loading={loading} onSubmit={onSubmit} />} */}
+        <NewCard quote={quote} loading={loading} onSubmit={onSubmit} />
       </div>
     </div>
   );
