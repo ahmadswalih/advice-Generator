@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import dividerSmall from "../img/pattern-divider-mobile.svg";
 import dividerBig from "../img/pattern-divider-desktop.svg";
 import dice from "../img/icon-dice.svg";
-import share from "../img/icons-share.svg";
 
 const NewCard = ({ quote, onSubmit, loading }) => {
   const [animate, setAnimate] = useState(false);

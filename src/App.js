@@ -23,7 +23,6 @@ const App = () => {
   return (
     <div className="App">
       <div className="new">
-        {/* {<ComponentCard quote={quote} loading={loading} onSubmit={onSubmit} />} */}
         <NewCard quote={quote} loading={loading} onSubmit={onSubmit} />
       </div>
     </div>
