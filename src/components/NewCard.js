@@ -14,10 +14,8 @@ const NewCard = ({ quote, onSubmit, loading }) => {
     advice: `${fade && "animate-fade"} text-light text-3xl mb-6`,
     divider: "text-center mx-auto mb-3",
     button:
-      "flex  block bg-green rounded-full p-4 mx-auto relative top-10 hover:shadow-circle hover:shadow-green ease-in-out duration-300",
-    button2: "m-4",
+      "block bg-green rounded-full p-4 mx-auto relative top-10 hover:shadow-circle hover:shadow-green ease-in-out duration-300",
     dice: animate && "animate-spin",
-    share: animate && "animate-spin",
   };
 
   return (
