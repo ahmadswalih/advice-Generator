@@ -13,7 +13,7 @@
   - Get Advices in Every Refresh
   
 
-## ✨ [Demo](https://celadon-praline-d67394.netlify.app/)
+## ✨ [Demo](https://quotes-generator-sw.netlify.app/)
 
 ### 🏠 [Homepage](/src/App.js)
 
