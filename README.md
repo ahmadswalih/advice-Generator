@@ -11,6 +11,7 @@
 ## Features
   - Reusable Cards
   - Get Advices in Every Refresh
+  - Styled using Tailwind CSS
   
 
 ## ✨ [Demo](https://quotes-generator-sw.netlify.app/)
