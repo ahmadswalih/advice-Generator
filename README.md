@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to Advice Generator 👋</h1>
+<h1 align="center">Welcome to Quote's Generator 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
   <a href="/main/LICENSE" target="_blank">
@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> &#34;Advice Generator&#34; is application where user will get advices in every click. The applicaiton uses api from the website adviceslip.
+> &#34;Quote's Generator&#34; is application where user will get advices in every click. The applicaiton uses api from the website adviceslip.
 
 ## Features
   - Reusable Cards
